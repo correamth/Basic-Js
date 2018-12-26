@@ -12,3 +12,6 @@ Repositório criado para a prática de JavaScript Básico, além de curiosidades
 * Objetos e arrays
 * Manipulação do Dom 
 * LocalStorage
+
+
+Acesse https://correamth.github.io/basicJs/.
