@@ -3,6 +3,35 @@ function id(elemento) {
 	return document.getElementById(elemento);
 }
 
+clickButton = function(){
+  if (first_click === "img" || first_click === "branco") {
+		document.getElementsByTagName('body')[0].classList.remove("backimg");
+        document.body.style.background = "#000000";
+		var all = document.getElementsByClassName("btn-secondary");
+			for (var i = 0; i < all.length; i++) {
+			  var link = all[i];
+			link.style.color= "#000";
+			id("testImc").style.color= "#fff";
+			id("testHoroscopo").style.color= "#fff";
+			id("banheiro").style.color= "#fff";
+			id("banheiro1").style.color= "#fff";}
+       		first_click = "preto";
+    } else{
+		document.getElementsByTagName('body')[0].classList.remove("backimg");
+        document.body.style.background = "#fff";
+		var all = document.getElementsByClassName("btn-secondary");
+			for (var i = 0; i < all.length; i++) {
+			var link = all[i];
+			link.style.color= "#fff";
+			id("testImc").style.color= "#000";
+			id("testHoroscopo").style.color= "#000";
+			id("banheiro").style.color= "#000";
+			id("banheiro1").style.color= "#000";}
+		first_click = "branco";
+    }	
+  localStorage.setItem('clique', first_click)
+}
+
 //inicializar class body 
 /*
 if (localStorage.getItem('clique') == null || localStorage.getItem('clique') == "img"){
@@ -105,6 +134,7 @@ function trocaCor(){
 first_click = "img";
 
 //button (preto e branco)true or false
+/*
 clickButton = function(){
   if (first_click === "img" || first_click === "branco") {
 		document.getElementsByTagName('body')[0].classList.remove("backimg");
@@ -133,7 +163,7 @@ clickButton = function(){
     }	
   localStorage.setItem('clique', first_click)
 }
-
+*/
 //button img
 synthWave = function(){
 	var all = document.getElementsByClassName("btn-secondary");
