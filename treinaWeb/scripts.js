@@ -33,11 +33,6 @@ clickButton = function(){
 }
 
 //inicializar class body 
-/*
-if (localStorage.getItem('clique') == null || localStorage.getItem('clique') == "img"){
-		document.getElementsByTagName('body')[0].classList.add("backimg");
-}
-*/
 if (localStorage.getItem('clique') == null){
 		clickButton();
 }
@@ -68,6 +63,11 @@ id("testHoroscopo").style.borderColor=aux;
 id("banheiro").style.borderColor=aux;
 id("banheiro1").style.borderColor=aux;
 id("oie").style.borderColor=aux;
+
+
+if (localStorage.getItem('clique') == "img"){
+		document.getElementsByTagName('body')[0].classList.add("backimg");
+}
 
 
 //inicializar letra botoes pegando o true ou false do clique
