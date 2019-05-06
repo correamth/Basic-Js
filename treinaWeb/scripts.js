@@ -2,7 +2,7 @@
 function id(elemento) {
 	return document.getElementById(elemento);
 }
-
+first_click = "img";
 clickButton = function(){
   if (first_click === "img" || first_click === "branco") {
 		document.getElementsByTagName('body')[0].classList.remove("backimg");
@@ -131,10 +131,11 @@ function trocaCor(){
 		
 	localStorage.setItem('cores',cor)
 }
-first_click = "img";
+
 
 //button (preto e branco)true or false
 /*
+first_click = "img";
 clickButton = function(){
   if (first_click === "img" || first_click === "branco") {
 		document.getElementsByTagName('body')[0].classList.remove("backimg");
