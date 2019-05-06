@@ -4,8 +4,13 @@ function id(elemento) {
 }
 
 //inicializar class body 
+/*
 if (localStorage.getItem('clique') == null || localStorage.getItem('clique') == "img"){
 		document.getElementsByTagName('body')[0].classList.add("backimg");
+}
+*/
+if (localStorage.getItem('clique') == null){
+		clickButton();
 }
 
 //inicializar cores botoes primeiro acesso
