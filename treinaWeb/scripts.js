@@ -11,7 +11,7 @@ if (localStorage.getItem('clique') == null || localStorage.getItem('clique') == 
 //inicializar cores botoes primeiro acesso
 if (localStorage.getItem('cores') == null) //#565965
 {
-	var aux = '#ff0080';
+	var aux = '#8fb649';
 }
 else{
 var aux =localStorage.getItem('cores')}
