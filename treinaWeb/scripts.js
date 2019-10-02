@@ -97,6 +97,19 @@ if (localStorage.getItem('clique') === "preto" ) {
 			id("banheiro1").style.color= "#000";}
 		//document.getElementById("singlebutton").style.color = "#fff";
 		//first_click = true;
+}else if (localStorage.getItem('clique') === "azul" ){
+		document.getElementsByTagName('body')[0].classList.remove("backimg");
+		document.body.style.background = "#054f77";
+		var all = document.getElementsByClassName("btn-secondary");
+			for (var i = 0; i < all.length; i++) {
+			var link = all[i];
+			link.style.color= "#054f77";
+			id("testImc").style.color= "#000";
+			id("testHoroscopo").style.color= "#000";
+			id("banheiro").style.color= "#000";
+			id("banheiro1").style.color= "#000";}
+		//document.getElementById("singlebutton").style.color = "#fff";
+		//first_click = true;
 }else{
 		var all = document.getElementsByClassName("btn-secondary");
 			for (var i = 0; i < all.length; i++) {
